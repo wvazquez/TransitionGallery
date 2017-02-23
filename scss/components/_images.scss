@@ -1,0 +1,37 @@
+/* ==============================
+		Gallery
+=================================*/
+.gallery{
+	width: 95%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.image-container{
+	padding: 1em;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+
+	img{
+		max-width: 100%;
+	}
+	h3{
+		font-size: 1.4em;
+		font-weight: 400;
+	}
+}
+
+.image-container > h3{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+	/* the paragraph pushes the button to the bottom
+			displaying equal height photo-containers*/
+.image-container > p{
+	flex-grow: 1;
+	flex-basis: auto;
+}

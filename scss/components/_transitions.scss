@@ -1,0 +1,105 @@
+header span{
+	color: lightblue;
+	transition-duration: 0.6s;
+	transition-property: color;
+}
+
+header h1:hover span{
+	color: firebrick;
+}
+
+.image-container a.button{
+	color: #4a89ca;
+	background: #fff;
+	border: 2px solid #4a89ca;
+
+	transition-duration: 0.2s;
+	transition-property: color, background;
+	transition-delay: 0.1s, 0;
+}
+
+.image-container a.button:hover{
+	color: white;
+	background: #4a89ca;
+}
+.overlay{
+	opacity: 0;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in;
+}
+
+.overlay-container:hover .overlay{
+	opacity: 1;
+}
+/* image 1 */
+.img-1 img{
+	transition: transform 0.4s;
+}
+.img-1 img:hover{
+	transform: scale(1.1);
+}
+
+/* image 2 */
+.img-2 img{
+	transition: box-shadow 0.4s, transform 0.4s;
+}
+.img-2 img:hover{
+	box-shadow: 0 0 8px 8px rgba(0,0,0,0.4);
+	transform: scale(1.03);
+}
+/* image 3 */
+.img-3 img{
+
+	transition-timing-funtion: linear;
+
+	transition: border-top 0.2s 0s, border-right 0.2s 0.2s,border-bottom 0.2s 0.4s,border-left 0.2s 0.6s;
+}
+.img-3 img:hover{
+	border-top: solid 4px gold;
+	border-right: solid 4px gold;
+	border-bottom: solid 4px gold;
+	border-left: solid 4px gold;
+}
+
+/* image 5 */
+.overlay-container.image-5{
+	overflow: hidden;
+}
+.overlay-container.image-5 img{
+	transition: transform 0.4s;
+	transform-origin: top left;
+}
+.overlay-container.image-5:hover img{
+	transform: scale(1.2);
+}
+
+
+
+/*  image 7 */
+
+.image-7 a.button{
+	color: #fff;
+	background: rgba(74,137,202, .65);
+	border-radius: 5px;
+	position: relative;
+}
+
+span.d-icon{
+	display: inline-block;
+	background: url("http://res.cloudinary.com/wvazquez/image/upload/v1477612834/Transition%20Gallery/icons/download.svg") no-repeat center center;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 45%;
+	top: 20%;
+	opacity: 0;
+	transition: opacity 0.3s 0.2s, left 0.3s ease-in 0s;
+}
+.image-7 a.button:hover .d-icon{
+	opacity:1;
+	left: 80%;
+}
+
+.image-container > .overlay-container.slide{
+	background: #ccc;
+}

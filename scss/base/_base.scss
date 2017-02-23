@@ -1,0 +1,19 @@
+/* ==============================
+			General
+=================================*/
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	@include font($stack--open-sans, 400);
+	background: $grey;
+
+}
+
+h1,
+h3,
+.button{
+	text-transform: uppercase;
+}
